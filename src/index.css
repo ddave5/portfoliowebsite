@@ -1,13 +1,130 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --color-bg: #fafafa;
+  --color-bg-variant: #F5FEFD;
+  --color-primary: #005e76;
+  --color-primary-variant: rgba(0, 110, 132, 0.6);
+  --color-hover: #008db0;
+  --color-font: #5a5a5a;
+  --color-font-variant: rgba(90, 90, 90, 0.6);
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 80%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-font);
+  line-height: 1.7;
+  background-image: url(../src/assets/images/bg-texture.svg);
+}
+
+/* =============== GENERAL =============== */
+
+.container{
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+section{
+  margin-top: 8rem;
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-primary-variant);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--color-hover);
+  color: white;
+  border-color: transparent;
+  transition: var(--transition);
+}
+
+.btn-primary { 
+  background: var(--color-primary);
+  color: var(--color-bg)
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+section > h2, section > h5{
+  text-align: center;
+  color: var(--color-light);
+}
+
+section > h2{
+  color: var(--color-primary);
+  font-family: 'CinzelQLD Beginner', cursive;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ============================ */
+
+@media screen and (max-width: 1024px) {
+  .container {
+      width: var(--container-width-md);
+  }
+
+  .section {
+      margin-top: 6rem;
+  }
+}
+
+
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ============================ */
+
+@media screen and (max-width: 600px) {
+  .container {
+      width: var(--container-width-sm);
+  }
+
+  .section > h2{
+      margin-bottom: 2rem;
+  }
+
+  .home {
+    opacity: 1;
+  }
 }

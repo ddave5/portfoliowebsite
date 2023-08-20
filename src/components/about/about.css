@@ -1,0 +1,160 @@
+.about__container{
+  display: grid;
+  grid-template-columns: 50% 40%;
+  gap: 10%;
+  margin-bottom: 10rem;
+}
+
+.chip__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.chip__card {
+  border: 3px solid var(--color-primary);
+  background: var(--color-bg-variant);
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  height: 15rem;
+}
+
+.chip__icons {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.chip__card > h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.chip__card > small {
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.chip__card:hover {
+  border: 3px solid var(--color-hover);
+  transition: var(--transition);
+  -moz-box-shadow: 0 0 15px var(--color-font);
+  -webkit-box-shadow: 0 0 15px var(--color-font);
+  box-shadow: 0 0 15px var(--color-font);
+}
+
+.chip__card:hover > .chip__icons{
+  color: var(--color-hover);
+}
+
+.photos__container{
+  height: 100%;
+  border-radius: 10%;
+  position: relative;
+  transition: var(--transition);
+}
+
+.left__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 32px;
+  font-size: 45px;
+  color: #fff;
+  background: var(--color-primary-variant);
+  border-radius: 8px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.right__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 32px;
+  font-size: 45px;
+  color: #fff;
+  background: var(--color-primary-variant);
+  border-radius: 8px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.dots__container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.dot {
+  font-size: 48px;
+  user-select: none;
+}
+
+.active__dot {
+  font-size: 48px;
+  color: var(--color-primary);
+  user-select: none;
+}
+
+  /* ============================ MEDIA QUERIES (MEDIUM DEVICES) ============================ */
+
+@media screen and (max-width: 1024px) { 
+    .about__container {
+      grid-template-columns: 1fr;
+    }
+
+    .photos__container {
+      height: 500px;
+    }
+
+    .dots__container {
+      margin-top: 0;
+    }
+}
+  
+  /* ============================ MEDIA QUERIES (SMALL DEVICES) ============================ */
+  
+@media screen and (max-width: 600px) {
+  .about__container {
+    grid-template-columns: 1fr;
+  }
+
+  .photos__container {
+    height: 300px;
+  }
+
+  .chip__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    align-items: center;
+  }
+
+  .chip__card {
+    height: 10rem;
+  }
+
+  .chip__icons {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+    color: var(--color-primary);
+  }
+  
+  .chip__card > h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .chip__card > small {
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+
+  .dots__container {
+    display: none;
+  }
+}

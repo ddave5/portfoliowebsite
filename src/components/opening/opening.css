@@ -1,0 +1,136 @@
+:root {
+  --width__high: 700px;
+  --height__high: 700px;
+
+  --width__mid: 400px;
+  --height__mid: 400px;
+
+  --width__low: 300px;
+  --height__low: 300px;
+
+  --top__high: calc(50% - 350px + 2rem);
+  --left__high: calc(50% - 350px);
+
+  --top__mid: calc(50% - 200px + 2rem);
+  --left__mid: calc(50% - 200px);
+
+  --top__low: calc(50% - 150px + 2rem);
+  --left__low: calc(50% - 150px);
+}
+
+.opening__container {
+  width: 100%;
+  height: 100vh;
+  background: url('../../assets/images/beach_3500_1500.png');
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.letter__mid__svg {
+  width: var(--width__high);
+  height: var(--height__high);
+  filter: blur(0.5px);
+  position: absolute;
+}
+
+.top__letter {
+  width: var(--width__high);
+  height: var(--height__high);
+  top: var(--top__high);
+  left: var(--left__high);
+  position: absolute;
+}
+
+.mid__letter {
+  width: var(--width__high);
+  height: var(--height__high);
+  top: var(--top__high);
+  left: var(--left__high);
+  background: white;
+  mix-blend-mode: darken;
+  position: absolute;
+}
+
+.sea__video {
+  width: var(--width__high);
+  height: var(--height__high);
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.video {
+  width: var(--width__high);
+  height: var(--height__high);
+  mix-blend-mode: lighten;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ============================ */
+
+@media screen and (max-width: 1024px) {
+  
+  .letter__mid__svg {
+    width: var(--width__mid);
+    height: var(--height__mid);
+  }
+  
+  .top__letter {
+    width: var(--width__mid);
+    height: var(--height__mid);
+    top: var(--top__mid);
+    left: var(--left__mid);
+  }
+  
+  .mid__letter {
+    width: var(--width__mid);
+    height: var(--height__mid);
+    top: var(--top__mid);
+    left: var(--left__mid);
+  }
+  
+  .sea__video {
+    width: var(--width__mid);
+    height: var(--height__mid);
+  }
+  
+  .video {
+    width: var(--width__mid);
+    height: var(--height__mid);
+  }
+}
+
+
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ============================ */
+
+@media screen and (max-width: 600px) {
+  .letter__mid__svg {
+    width: var(--width__low);
+    height: var(--height__low);
+  }
+  
+  .top__letter {
+    width: var(--width__low);
+    height: var(--height__low);
+    top: var(--top__low);
+    left: var(--left__low);
+  }
+  
+  .mid__letter {
+    width: var(--width__low);
+    height: var(--height__low);
+    top: var(--top__low);
+    left: var(--left__low);
+  }
+  
+  .sea__video {
+    width: var(--width__low);
+    height: var(--height__low);
+  }
+  
+  .video {
+    width: var(--width__low);
+    height: var(--height__low);
+  }
+}
