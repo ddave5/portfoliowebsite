@@ -1,7 +1,5 @@
 .about__container{
   display: grid;
-  grid-template-columns: 50% 40%;
-  gap: 10%;
   margin-bottom: 10rem;
 }
 
@@ -18,7 +16,7 @@
   border-radius: 16px;
   padding: 1rem;
   text-align: center;
-  height: 15rem;
+  height: 12rem;
 }
 
 .chip__icons {

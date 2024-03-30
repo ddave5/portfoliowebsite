@@ -23,7 +23,7 @@ const about_texts = [
   },
   {
     'icon': <FaRegBuilding/>,
-    'title': 'Workplace',
+    'title': 'Current Workplace',
     'detail': 'Deutsche Telekom TSI Hungary Kft.'
   },
   {
@@ -43,40 +43,22 @@ const about_texts = [
   }
 ];
 
-
-const slides = [
-  {
-    'url': Image1,
-    'title': 'image1'
-  },
-  {
-    'url': Image2,
-    'title': 'image2'
-  },
-  {
-    'url': Image3,
-    'title': 'image1'
-  },
-];
-
 const About = () => {
   return (
     <section id='about'>
       <h5>Get To Know</h5>
       <h2>About Me</h2>
       <div className="container about__container">
-      
-      <PhotoSlider slides={slides}/>
-      <div className="chip__container">
-        {about_texts.map( about => {
-          return(
-            <article className='chip__card' data-aos="zoom-in">
-              <p className='chip__icons'> {about.icon} </p>
-              <h5> {about.title} </h5>
-              <small> {about.detail} </small>
-            </article>
-          );})}
-        </div>
+        <div className="chip__container">
+          {about_texts.map( about => {
+            return(
+              <article className='chip__card' data-aos="zoom-in">
+                <p className='chip__icons'> {about.icon} </p>
+                <h5> {about.title} </h5>
+                <p> {about.detail} </p>
+              </article>
+            );})}
+          </div>
       </div>
     </section>
   )

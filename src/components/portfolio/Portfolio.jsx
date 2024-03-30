@@ -27,13 +27,21 @@ const Portfolio = () => {
     },
     {
       "id": 3,
+      "name": "Electro Netics Kft. Next.JS",
+      "image": Electronetics,
+      "description": "Next JS based web application for Electro Netics Kft. It is ported from the React project.",
+      "github_url": "https://github.com/ddave5/electroneticsnext",
+      "live_url": "https://electroneticsnext.web.app/"
+    },
+    {
+      "id": 4,
       "name": "Digital Diary (WIP)",
       "image": DigitalDiary,
       "description": "React based web application with Spring boot backend to create a bullet journey website.",
       "github_url": "https://github.com/ddave5/digitaldiary",
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Tápláló tudás (WIP)",
       "image": TaplaloTudas,
       "description": "React based web application for a portfolio website.",
@@ -41,7 +49,7 @@ const Portfolio = () => {
       "live_url": "https://taplalotudas.web.app/"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Legénybúcsú",
       "image": Legenybucsu,
       "description": "React based web application for bachelor party. It alse has a bachelorette types.",
@@ -49,7 +57,7 @@ const Portfolio = () => {
       "live_url": "https://legenybucsu-2022.web.app/"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "RitaMotivátor",
       "image": RitaMotivator,
       "description": "React based web application for my girlfriend to be motivated.",
