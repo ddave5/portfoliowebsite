@@ -1,9 +1,6 @@
 import React from 'react'
 import './portfolio.css';
 import Electronetics from '../../assets/images/portfolio/ElectroNetics.png'
-import Legenybucsu from '../../assets/images/portfolio/legenybucsu.png'
-import RitaMotivator from '../../assets/images/portfolio/RitaMotivator.png'
-import TaplaloTudas from '../../assets/images/portfolio/Taplalotudas.png'
 import DigitalDiary from '../../assets/images/portfolio/DigitalDiary.png'
 
 const Portfolio = () => {
