@@ -11,7 +11,7 @@ const footer = () => {
           <a href='#portfolio'>Portfolio</a>
           <a href='#contact'>Contact</a>
         </div>
-        <p className='footer__copyright'>©2022. Created by David Felegyhazi</p>
+        <p className='footer__copyright'>©2022-2024. Created by David Felegyhazi</p>
       </div>
     </section>
   )
