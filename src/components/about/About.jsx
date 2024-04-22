@@ -5,10 +5,6 @@ import {BsFolderCheck} from 'react-icons/bs';
 import {IoSchoolOutline} from 'react-icons/io5';
 import {IoLanguage} from 'react-icons/io5'
 import {BiLaptop} from 'react-icons/bi'
-import PhotoSlider from './PhotoSlider';
-import Image1 from '../../assets/images/about_me/01.jpg'
-import Image2 from '../../assets/images/about_me/02.JPG'
-import Image3 from '../../assets/images/about_me/03.jpg'
 
 const about_texts = [
   {

@@ -39,30 +39,6 @@ const Portfolio = () => {
       "image": DigitalDiary,
       "description": "React based web application with Spring boot backend to create a bullet journey website.",
       "github_url": "https://github.com/ddave5/digitaldiary",
-    },
-    {
-      "id": 5,
-      "name": "Tápláló tudás (WIP)",
-      "image": TaplaloTudas,
-      "description": "React based web application for a portfolio website.",
-      "github_url": "https://github.com/ddave5/TaplaloTudas",
-      "live_url": "https://taplalotudas.web.app/"
-    },
-    {
-      "id": 6,
-      "name": "Legénybúcsú",
-      "image": Legenybucsu,
-      "description": "React based web application for bachelor party. It alse has a bachelorette types.",
-      "github_url": "https://github.com/ddave5/legenybucsu",
-      "live_url": "https://legenybucsu-2022.web.app/"
-    },
-    {
-      "id": 7,
-      "name": "RitaMotivátor",
-      "image": RitaMotivator,
-      "description": "React based web application for my girlfriend to be motivated.",
-      "github_url": "https://github.com/ddave5/ritamotivator",
-      "live_url": "https://ritamotivator.web.app/"
     }
   ];
 
